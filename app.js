@@ -1,7 +1,7 @@
 
   
-// 1. CONFIGURATION
-const API_KEY = "fcc8de7015bbb202209bbf0261babf4c"; // <<<--- REPLACE THIS WITH YOUR ACTUAL API KEY
+
+const API_KEY = "fcc8de7015bbb202209bbf0261babf4c"; 
 const BASE_URL = "https://api.openweathermap.org/data/2.5/";
 
 // 2. DOM ELEMENT SELECTORS
@@ -18,7 +18,7 @@ const humidity = document.getElementById("humidity");
 const windSpeed = document.getElementById("wind-speed");
 const forecastContainer = document.getElementById("forecast-container");
 
-// 3. HELPER FUNCTIONS (No change to these)
+
 
 /**
  * Converts a string to title case (e.g., "broken clouds" -> "Broken Clouds").
@@ -66,7 +66,7 @@ const fetchWeatherData = async (endpoint, query) => {
 };
 
 
-// 4. MAIN DISPLAY FUNCTIONS (No change to these)
+
 
 /**
  * Updates the current weather section of the dashboard.
@@ -125,7 +125,7 @@ const displayForecast = (data) => {
 };
 
 
-// 5. MAIN APPLICATION LOGIC (No change to this)
+
 
 /**
  * Handles the weather search logic.
@@ -161,7 +161,7 @@ const getWeather = async (city) => {
 };
 
 
-// 6. THEME TOGGLE LOGIC (NEW SECTION)
+
 
 /**
  * Applies the stored theme preference or defaults to light mode.
@@ -194,7 +194,7 @@ const toggleTheme = () => {
 }
 
 
-// 7. EVENT LISTENERS AND INITIALIZATION
+
 
 // Search button click
 searchBtn.addEventListener("click", () => {
