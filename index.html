@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <button id="theme-toggle" aria-label="Toggle dark and light theme">
+        ☀️
+    </button>
+
+    <div class="weather-dashboard">
+        <h1>Weather Dashboard</h1>
+        
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter City Name (e.g., London)" autofocus>
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div class="current-weather">
+            <h2 id="location-name">Enter a City Above</h2>
+            <div class="main-info">
+                <div class="temp-condition">
+                    <p id="temperature">--°C</p>
+                    <p id="condition">--</p>
+                </div>
+                <img id="weather-icon" src="" alt="Weather Icon" style="display: none;">
+            </div>
+            <div class="details">
+                <p>Feels Like: <span id="feels-like">--°C</span></p>
+                <p>Humidity: <span id="humidity">--%</span></p>
+                <p>Wind Speed: <span id="wind-speed">-- km/h</span></p>
+            </div>
+        </div>
+
+        <div class="forecast-section">
+            <h3>5-Day Forecast</h3>
+            <div class="forecast-container" id="forecast-container">
+                <p id="forecast-placeholder">Loading forecast...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
