@@ -1,37 +1,35 @@
 :root {
     /* LIGHT THEME (Default) */
-    --primary-color: #2b7a78; /* Teal/Dark Mint */
-    --secondary-color: #3aa8a3; /* Lighter Teal */
-    --text-color: #17252a; /* Very Dark Blue */
-    --background-color: #def2f1; /* Light Blue-Green (body background) */
-    --card-background: #feffff; /* White (dashboard background) */
-    --forecast-card-bg: #e0f2f1; /* Light Forecast Card BG */
+    --primary-color: #2b7a78; 
+    --secondary-color: #3aa8a3; 
+    --text-color: #17252a; 
+    --background-color: #def2f1; 
+    --card-background: #feffff; 
+    --forecast-card-bg: #e0f2f1; 
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* ------------------------------------ */
+
 /* DARK MODE COLORS                     */
-/* ------------------------------------ */
+
 body.dark-mode {
-    /* DARK THEME */
-    --primary-color: #66fcf1; /* Neon Cyan */
-    --secondary-color: #45a29e; /* Darker Cyan */
-    --text-color: #c5c6c7; /* Light Gray */
-    --background-color: #1f2833; /* Dark Charcoal (body background) */
-    --card-background: #0b0c10; /* Near Black (dashboard background) */
-    --forecast-card-bg: #1f2833; /* Dark Forecast Card BG */
-    --shadow: 0 4px 15px rgba(102, 252, 241, 0.2); /* Neon Shadow */
+    
+    --primary-color: #66fcf1; 
+    --secondary-color: #45a29e; 
+    --text-color: #c5c6c7; 
+    --background-color: #1f2833; 
+    --card-background: #0b0c10; 
+    --forecast-card-bg: #1f2833; 
+    --shadow: 0 4px 15px rgba(102, 252, 241, 0.2); 
 }
 
-/* ------------------------------------ */
-/* GLOBAL STYLES                        */
-/* ------------------------------------ */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    transition: color 0.3s, background-color 0.3s; /* Smooth theme transition */
+    transition: color 0.3s, background-color 0.3s; 
 }
 
 body {
@@ -60,7 +58,7 @@ h1 {
     font-weight: 700;
 }
 
-/* --- Theme Toggle Button --- */
+
 #theme-toggle {
     position: absolute;
     top: 20px;
@@ -82,7 +80,7 @@ body.dark-mode #theme-toggle {
 }
 
 
-/* --- Search Container --- */
+
 .search-container {
     display: flex;
     gap: 10px;
@@ -123,9 +121,9 @@ body.dark-mode #theme-toggle {
     transform: scale(0.98);
 }
 
-/* --- Current Weather Section --- */
+
 .current-weather {
-    /* Use a fixed gradient for a distinct look */
+    
     background: linear-gradient(135deg, #16a085, #1abc9c);
     color: white;
     padding: 25px;
@@ -133,7 +131,7 @@ body.dark-mode #theme-toggle {
     margin-bottom: 30px;
     box-shadow: var(--shadow);
 }
-/* Adjust gradient for dark mode */
+
 body.dark-mode .current-weather {
     background: linear-gradient(135deg, #1a1a2e, #16213e);
     color: var(--primary-color);
@@ -177,7 +175,7 @@ body.dark-mode .current-weather {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-/* --- Forecast Section --- */
+
 .forecast-section h3 {
     color: var(--text-color);
     margin-bottom: 15px;
@@ -193,12 +191,12 @@ body.dark-mode .current-weather {
 
 .forecast-card {
     background-color: var(--forecast-card-bg);
-    flex-basis: calc(20% - 12px); /* 5 cards per row with gap */
+    flex-basis: calc(20% - 12px); 
     padding: 15px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    min-width: 120px; /* Ensure cards don't get too small */
+    min-width: 120px; 
 }
 
 .forecast-card .day {
@@ -209,7 +207,7 @@ body.dark-mode .current-weather {
 }
 
 .error-message {
-    color: #e84a5f; /* Red */
+    color: #e84a5f; 
     font-weight: 600;
     text-align: center;
     padding: 15px;
@@ -223,7 +221,7 @@ body.dark-mode .error-message {
 }
 
 
-/* --- Responsive Adjustments --- */
+
 @media (max-width: 768px) {
     .current-weather {
         text-align: center;
@@ -249,7 +247,7 @@ body.dark-mode .error-message {
         justify-content: center;
     }
     .forecast-card {
-        flex-basis: calc(50% - 8px); /* 2 cards per row on smaller screens */
+        flex-basis: calc(50% - 8px); 
         min-width: unset;
     }
     #theme-toggle {
