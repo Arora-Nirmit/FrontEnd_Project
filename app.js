@@ -4,9 +4,9 @@
 const API_KEY = "fcc8de7015bbb202209bbf0261babf4c"; 
 const BASE_URL = "https://api.openweathermap.org/data/2.5/";
 
-// 2. DOM ELEMENT SELECTORS
-const body = document.body; // Added for theme toggle
-const themeToggle = document.getElementById("theme-toggle"); // Added for theme toggle
+
+const body = document.body; 
+const themeToggle = document.getElementById("theme-toggle"); 
 const cityInput = document.getElementById("city-input");
 const searchBtn = document.getElementById("search-btn");
 const locationName = document.getElementById("location-name");
